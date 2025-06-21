@@ -25,7 +25,7 @@ def generate_script_stream(topic, style):
 
     try:
         response = requests.post(
-            "http://localhost:11434/api/generate",
+            "http://192.168.61.131:11434/api/generate",
             headers=headers,
             data=json.dumps(payload),
             stream=True,
